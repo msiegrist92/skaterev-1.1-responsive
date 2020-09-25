@@ -1,0 +1,459 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+  width: 100%;
+}
+
+#cards_container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "left_card right_card";
+}
+
+@media only screen and (max-width: 1200px){
+  #cards_container {
+    margin: 0 auto;
+    grid-template-rows: auto auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "left_card"
+      "right_card";
+  }
+}
+
+.left_card {
+  float: left;
+  height: 850px;
+  width: 550px;
+  margin: 0 auto;
+  background-image: url("../../images/svg_bg/baseball_card.svg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  grid-area: left_card;
+
+}
+
+.left_card h1 {
+  padding: 0;
+  margin: 0;
+  padding-top: 0;
+  font-size: 150px;
+  color: white;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.left_card img {
+  width: 60%;
+  height: auto;
+  margin-left: 15%;
+  margin-top: 2.5%;
+  padding-bottom: 0;
+  margin-bottom: 7%;
+}
+
+.left_card h2 {
+  margin-left: 12%;
+  font-size: 60px;
+  background-color: #52b8ff;
+  color: white;
+  border: 4px solid white;
+  padding: 20px 5px 10px 50px;z
+  border-radius: 6px;
+  width: 75%;
+  margin-bottom: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+.left_card h3 {
+  font-size: 60px;
+  width: 65%;
+  background-color: white;
+  color: #ff4e4e;
+  padding: 10px 20px 10px 30px;
+  border: 4px solid white;
+  border-radius: 6px;
+  margin-lefT: 22%;
+  margin-top: 1%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+}
+
+.right_card {
+  grid-area: right_card;
+  background: white;
+  float: left;
+  height: 850px;
+  width: 550px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 15% 10% 8% 7% 7% 13% 18% 22%;
+  grid-template-areas:
+    "cons_logo shoe_image"
+    "brand shoe_image"
+    "model shoe_image"
+    "stats shoe_image"
+    "achievement shoe_image"
+    "colors colors"
+    "table_cont table_cont"
+    "review review";
+}
+
+.cons_logo {
+  grid-area: cons_logo;
+  border-right: 4px solid #5090d8;
+}
+
+.cons {
+  height: 100%;
+}
+
+.bb_logo {
+  width: 20%;
+  height: auto;
+  margin-left: 0%;
+  margin-right: 10%;
+  display: block;
+  float: left;
+}
+
+.brand {
+  grid-area: brand;
+  border-right: 4px solid #5090d8;
+}
+
+.brand h1 {
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+}
+
+.model {
+  grid-area: model;
+  border-right: 4px solid #5090d8;
+  background-color: #5090d8;
+  color: white;
+}
+
+.model h2 {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.stats {
+  grid-area: stats;
+  border-right: 4px solid #5090d8;
+}
+
+.stats p {
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+}
+
+.achievement {
+  grid-area: achievement;
+  border-right: 4px solid #5090d8;
+  border-bottom: 4px solid #5090d8;
+  background-color: #5090d8;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.achievement h3 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.shoe_image {
+  grid-area: shoe_image;
+  background-image: url("../../images/chuck/shoe_bg.svg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.shoe_image img {
+  margin-top: 30%;
+  width: 45%;
+  height: auto;
+  margin-left: 30%;
+}
+
+.colors {
+  grid-area: colors;
+}
+
+.colors h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.colors img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #5090d8;
+  padding-bottom: 5px;
+}
+
+.table_cont {
+  grid-area: table_cont;
+}
+
+table {
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+}
+
+table th {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+}
+
+table td {
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.review {
+  grid-area: review;
+}
+
+.review p {
+  margin-top: 2%;
+  height: 100%;
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+}
+
+
+
+
+@media only screen and (max-width: 1400px){
+
+  .left_card h2 {
+    float: left;
+    width: 75%;
+  }
+
+  .left_card h3 {
+    float: left;
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .left_card img {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .right_card .cons {
+    height: 90%;
+  }
+
+  .right_card table {
+    font-size: 16px;
+  }
+
+  .right_card p {
+    font-size: 16px;
+  }
+
+  .shoe_image {
+    background-size: cover;
+  }
+
+  .shoe_image img {
+    margin-left: 30%;
+    margin-top: 35%;
+  }
+
+  table {
+    margin-top: 0;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 549px){
+  .left_card{
+    width: 400px;
+  }
+
+  .left_card h2{
+    margin-top: 110px;
+    font-size: 36px;
+    width: 70%;
+  }
+
+  .left_card h3{
+    font-size: 36px;
+  }
+
+  .right_card{
+    width: 400px;
+  }
+
+  .right_card .cons{
+    height: 70%;
+    margin-right: 18px;
+  }
+
+  .right_card table {
+    font-size: 14px;
+  }
+
+  .right_card p {
+    font-size: 14px;
+  }
+
+  .shoe_image {
+    background-size: cover;
+  }
+
+  .shoe_image img {
+    width: 60%;
+    margin-left: 30%;
+    margin-top: 45%;
+  }
+
+  table {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 420px){
+  .left_card {
+    width: 350px;
+  }
+
+  .right_card {
+    width: 350px;
+  }
+
+  .left_card h1{
+    font-size: 128px;
+  }
+
+  .left_card h2{
+    margin-top: 110px;
+    font-size: 36px;
+    width: 70%;
+  }
+
+  .left_card h3{
+    font-size: 36px;
+    width: 68%;
+  }
+
+  .right_card .cons{
+    height: 70%;
+    margin-right: 18px;
+  }
+
+  .right_card table {
+    font-size: 13px;
+  }
+
+  .right_card p {
+    font-size: 13px;
+  }
+
+  .shoe_image {
+    background-size: cover;
+  }
+
+  .shoe_image img {
+    width: 60%;
+    margin-left: 30%;
+    margin-top: 45%;
+  }
+
+  table {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 321px){
+  .left_card {
+    width: 300px;
+  }
+
+  .right_card {
+    width: 300px;
+  }
+
+  .left_card h1{
+    font-size: 110px;
+  }
+
+  .left_card h2{
+    margin-top: 100px;
+    font-size: 30px;
+    width: 65%;
+  }
+
+  .left_card h3{
+    font-size: 30px;
+    width: 64%;
+  }
+
+  .right_card .cons{
+    height: 80%;
+    margin-right: 6px;
+  }
+
+  .right_card table {
+    font-size: 13px;
+  }
+
+  .right_card h1 {
+    font-size: 30px;
+  }
+
+  .right_card h2 {
+    font-size: 22px;
+  }
+
+  .right_card h3 {
+    font-size: 18px;
+  }
+
+  .right_card p {
+    font-size: 12px;
+  }
+
+  .shoe_image {
+    background-size: cover;
+  }
+
+  .shoe_image img {
+    width: 60%;
+    margin-left: 30%;
+    margin-top: 60%;
+  }
+
+  table {
+    margin-top: 20px;
+  }
+
+}

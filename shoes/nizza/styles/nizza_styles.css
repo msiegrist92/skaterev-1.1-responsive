@@ -1,0 +1,369 @@
+/* basic reset for all elements*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/*navbar styles are edited slightly to fit responsive grid better*/
+
+
+
+ul li {
+  padding-bottom: 0;
+}
+
+ul li a {
+  padding-bottom: 0;
+}
+
+/*font styles is given to all content elements of the right column*/
+
+.font_styles {
+  background-color: rgba(37, 54, 136, 1);
+  color: white;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+}
+
+.font_styles h2 {
+  font-size: 40px;
+}
+
+.stars img {
+  width: 12.6%;
+  height: auto;
+  display: inline-block;
+}
+
+/*div which contains the upper text elements*/
+
+.upper_text {
+  width: 100%;
+  height: 50%;
+  color: white;
+}
+
+.upper_text h1 {
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+/*title text elements are floated within a div within the bg grid element
+  the element's padding determines the position of the background svg*/
+
+.top_bg_h1 {
+  float: left;
+  width: 20%;
+  margin-left: 5%;
+  padding: 7% 0 3% 3%;
+  background-image: url("../../../images/nizza/top_text_bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.top_bg_h2 {
+  float: left;
+  width: 20%;
+  margin-top: 2.5%;
+  padding: 5% 2% 2% 3%;
+  background-image: url("../../../images/nizza/top_text_bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.top_bg_h2 h1 {
+  font-size: 30px;
+}
+
+
+h1 {
+  display: inline;
+  font-size: 48px;
+}
+
+h2 {
+  display: inline;
+  font-size: 30px;
+}
+
+.lower_text {
+  margin-top: 0%;
+  width: 100%;
+  text-align: right;
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+.lower_text h3 {
+  padding-top: 10px;
+  padding-right: 10px;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.copy_container img {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/*all styles below this line determine the grid layout*/
+
+.grid_container {
+  display: grid;
+  height: 960px;
+  width: 100%;
+  grid-template-rows: 8% 8% 8% 8% 8% 8% 8% 8% 8% 6.5% 6.5%;
+  grid-template-columns: 80% 20%;
+  grid-template-areas:
+    "bg tr1"
+    "bg tr2"
+    "bg tr3"
+    "bg tr4"
+    "bg tr5"
+    "bg tr6"
+    "bg tr7"
+    "bg tr8"
+    "bg tr9"
+    "bg tr10"
+    "bg tr11"
+    "bg tr12";
+
+}
+
+
+#nav_bar {
+  grid-area: navbar;
+}
+
+.background {
+  grid-area: bg;
+  background-image: url("../../../images/nizza/background_large.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1300px){
+  .background {
+    background-image: url("../../../images/nizza/background_med.jpg");
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .background {
+    background-image: url("../../../images/nizza/background_small.jpg")
+}
+
+
+.tr_1 {
+  grid-area: tr1;
+  padding-top: 10px;
+}
+
+.tr_2 {
+  grid-area: tr2;
+}
+
+.tr_3{
+  grid-area: tr3;
+  padding-top: 10px;
+}
+
+.tr_4 {
+  grid-area: tr4;
+}
+
+.tr_5 {
+  grid-area: tr5;
+  padding-top: 10px;
+}
+
+.tr_6 {
+  grid-area: tr6;
+}
+
+.tr_7 {
+  grid-area: tr7;
+  padding-top: 10px;
+}
+.tr_8 {
+  grid-area: tr8;
+}
+.tr_9 {
+  grid-area: tr9;
+  padding-top: 10px;
+}
+.tr_10 {
+  grid-area: tr10;
+}
+.tr_11 {
+  grid-area: tr11;
+}
+.tr_12 {
+  grid-area: tr12;
+}
+
+/*flips tabel to bottom of backgroud image when screen height is greater than 1100px
+ - wide tablets in portrait*/
+@media only screen and (min-height: 1100px){
+  .grid_container {
+    height: 1100px;
+    grid-template-rows: 800px 100px 100px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    "bg bg bg bg bg bg"
+    "tr1 tr3 tr5 tr7 tr9 tr12"
+    "tr2 tr4 tr6 tr8 tr10 tr12";
+    }
+
+    .font_styles {
+      padding-top: 20px;
+    }
+
+    .font_styles h2{
+      font-size: 30px;
+    }
+
+    .stars img{
+      height: 30px;
+      width: 30px;
+    }
+
+    .tr_12 {
+      padding-top: 40%;
+    }
+}
+
+@media only screen and (max-height: 800px){
+  .grid_container {
+    height: 800px;
+    grid-template-rows: 7% 7% 7% 7% 7% 7% 7% 7% 7% 5% 5%;
+  }
+
+  .lower_text {
+    margin-top: 0%;
+    width: 100%;
+    text-align: right;
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+
+  .lower_text h3 {
+    padding-top: 5px;
+    padding-right: 10px;
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 990px){
+  .font_styles h2{
+    font-size: 36px;
+  }
+
+  .top_bg_h1 h1{
+    font-size: 36px;
+  }
+
+  .top_bg_h2 h1{
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 895px){
+  .font_styles h2{
+    font-size: 24px;
+  }
+
+  .copy_container img {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  .font_styles h1{
+    font-size: 36px;
+  }
+
+  .top_bg_h1 h1 {
+    font-size: 24px;
+  }
+
+  .top_bg_h2 h1 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 590px){
+  .grid_container {
+    height: 600px;
+    grid-template-rows: 500px 50px 50px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+    "bg bg bg bg bg bg"
+    "tr1 tr3 tr5 tr7 tr9 tr12"
+    "tr2 tr4 tr6 tr8 tr10 tr12";
+    }
+
+    .tr_12 {
+      padding-top: 50%;
+    }
+
+    .tr_12 h1 {
+      font-size: 18px;
+    }
+
+    .background {
+      background-size: cover;
+      background-position: left;
+    }
+
+    .lower_text {
+      margin-top: 20%;
+      width: 100%;
+      text-align: right;
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+
+    .lower_text h3 {
+      padding-top: 5px;
+      padding-right: 10px;
+      font-family: "Karla", sans-serif;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .font_styles h2{
+      font-size: 10px;
+    }
+
+    .stars img {
+      height: 10px;
+      width: 10px;
+    }
+
+    #mobile_nav_list {
+      margin-left: 70%;
+    }
+
+    .top_bg_h1 h1{
+      font-size: 20px;
+    }
+
+    .top_bg_h2 h1{
+      font-size: 16px;
+    }
+
+    .copy_container img {
+      width: 80%;
+    }
+
+
+}

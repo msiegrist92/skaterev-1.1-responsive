@@ -1,0 +1,14 @@
+#nav_bar {
+  background: rgb(190,190,190);
+  background: linear-gradient(90deg, rgba(190,190,190,1) 26%, rgba(59,57,35,1) 100%);
+  color: white;
+  grid-area: navbar;
+}
+
+#mobile_nav_list {
+  background-color: rgba(59, 59, 59, 0.8);
+}
+
+ul li ul {
+    background-color: rgba(59, 59, 59, 0.8);
+}

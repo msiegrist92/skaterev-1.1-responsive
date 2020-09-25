@@ -1,0 +1,99 @@
+/*this sheet is home to the basic styles for copy on the website to include
+reviews text, article headlines, and figcations*/
+
+/*class for a large centered headline*/
+
+.article_title {
+  clear: both;
+  text-align: center;
+  font-size: 60px;
+  border-left: 3px solid #31748a;
+  border-right: 3px solid #31748a;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+/*class to style all copy paragraphs similarly*/
+
+.copy_styles {
+  box-sizing: border-box;
+  border: 4px solid #f7c6fb;
+  background-color: rgba(254, 225, 252, 0.3);
+  padding: 40px;
+  font-size: 1.3rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*reduce padding as screen gets smaller*/
+
+/*class to style intro and conclusion paragraphs to be centered in a larger box*/
+
+.centered_paragraph {
+  clear: both;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+/*styling for all figcaptions elements - this is currently classless*/
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+}
+
+@media only screen and (max-width: 1350px){
+  .article_title {
+    font-size: 3.5rem;
+  }
+}
+
+
+@media only screen and (max-width: 1180px){
+  .article_title {
+    font-size: 3rem;
+  }
+}
+
+
+@media only screen and (max-width: 1250px) {
+  .copy_styles {
+    font-size: 1.2rem;
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .copy_styles {
+    font-size: 1rem;
+    padding: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .centered_paragraph {
+    width: 90%;
+  }
+  .copy_styles {
+    padding: 8px;
+  }
+
+  .article_title {
+    font-size: 2rem;
+  }
+
+  .copy_styles {
+    font-size: .9rem;
+  }
+}

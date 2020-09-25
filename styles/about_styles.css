@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  background-image: url("../images/svg_bg/about_bg_2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "ollie_img"
+    "first_p"
+    "branding"
+    "second_p";
+}
+
+@media only screen and (min-width: 620px){
+  .grid_container {
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 5% repeat(4, auto);
+    grid-template-areas:
+      ". ."
+      "first_p ollie_img"
+      "second_p ollie_img"
+      "branding branding";
+  }
+}
+
+@media only screen and (min-width: 1300px){
+  .grid_container {
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 15% 22.5% repeat(3, auto);
+    grid-template-areas:
+      ". ollie_img"
+      "first_p ollie_img"
+      ". ollie_img"
+      "second_p second_p"
+      "branding branding";
+  }
+}
+
+.ollie_img {
+  grid-area: ollie_img;
+  width: 90%;
+}
+
+@media only screen and (min-width: 1300px){
+  .ollie_img {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1600px){
+  .ollie_img {
+    width: 75%;
+  }
+}
+
+.branding {
+  grid-area: branding;
+  width: 95%;
+}
+
+@media only screen and (min-width: 620px){
+  .branding {
+    width: 80%;
+    padding-bottom: 10%;
+  }
+}
+
+@media only screen and (min-width: 1300px){
+  .branding {
+    width: 60%;
+    padding-bottom: 5%;
+  }
+}
+
+.first_paragraph {
+  grid-area: first_p;
+  width: 90%;
+}
+
+@media only screen and (min-width: 620px){
+  .first_paragraph{
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1300px){
+  .first_paragraph{
+    width: 80%;
+  }
+}
+
+.truck_img {
+  grid-area: truck_img;
+  width: 80%;
+  display: none;
+}
+
+.second_paragraph {
+  grid-area: second_p;
+  width: 90%;
+}
+
+@media only screen and (min-width: 1300px){
+  .second_paragraph {
+    width: 60%;
+    padding: 20px !important;
+    margin-bottom: 0 !important;
+    margin-top: 2% !important;
+  }
+}
+
+
+.wheels_img {
+  grid-area: wheels_img;
+  width: 60%;
+}
+
+@media only screen and (min-width: 620px){
+  .wheels_img {
+    width: 60%;
+  }
+}
+
+
+.centered {
+  margin: 2% auto;
+}
+
+@media only screen and (min-width: 620px){
+  .centered {
+    margin: 5% auto;
+  }
+}
+
+.about_copy {
+  padding: 12px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  background-color: rgba(255, 245, 252, 0.5);
+  box-shadow: -2px -2px 3px 3px inset;
+}
+
+@media only screen and (min-width: 620px){
+  .about_copy {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 830px){
+  .about_copy {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 940px){
+  .about_copy{
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 1050px){
+  .about_copy{
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .about_copy {
+    font-size: 1.6rem;
+  }
+}

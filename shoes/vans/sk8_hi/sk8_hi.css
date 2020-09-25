@@ -1,0 +1,124 @@
+.main_review_img {
+  width: 40%;
+  margin-left: 5%;
+  float: left;
+}
+
+.rankings_card {
+  width: 45%;
+  margin: 2.5% 2.5% 5% 0;
+}
+
+body {
+  background-image: url("../../../images/svg_bg/sk8_hi_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.review_grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "copy_1 image"
+    "copy_2 image";
+
+}
+
+@media only screen and (max-width: 650px){
+  .review_grid {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "copy_1"
+      "image"
+      "copy_2";
+  }
+}
+
+.ollie_img {
+  margin: 30% auto;
+  width: 90%;
+  height: auto;
+  grid-area: image;
+}
+
+@media only screen and (max-width: 650px){
+  .ollie_img {
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+  }
+}
+
+
+#copy_1 {
+  grid-area: copy_1;
+}
+
+#copy_2 {
+  grid-area: copy_2;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width: 1452px) {
+  table td {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .main_review_img {
+    margin-left: 10%;
+  }
+}
+
+
+@media only screen and (max-width: 1022px) {
+
+  .main_review_img {
+    width: 70%;
+    height: auto;
+    margin-left: 25%;
+    margin-right: 5%;
+    margin-bottom: 0;
+  }
+
+  .rankings_card {
+    margin-top: 0%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+}
+
+
+@media only screen and (max-width: 850px) {
+  .main_review_img {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+}
+
+@media only screen and (max-width: 605px) {
+
+  .rankings_card {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  table td {
+    font-size: 14px;
+    padding-left: 2.5%;
+  }
+}

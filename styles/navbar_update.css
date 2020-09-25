@@ -1,0 +1,152 @@
+
+
+#nav_bar {
+    width: 100%;
+    height: 100px;
+    background-image: url("../images/svg_bg/navbar_bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nav_bar img {
+  margin-top:5px;
+  float: left;
+  display: block;
+  height: 90px;
+}
+
+ul {
+  display: inline-block;
+  float: right;
+  margin-top: 30px;
+}
+
+ul li {
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 24px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+ul li a:hover {
+  color: #c5c1cd;
+}
+
+/*targets ul for dropdown*/
+
+ul li ul {
+  display: none;
+  position: absolute;
+  padding-left: 0px;
+  background-color: rgba(29, 112, 140, 0.85);
+  margin-top: 0px;
+}
+
+ul li ul li {
+  display: block;
+  padding-left: 0px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.to_hover:hover ul {
+  display: block;
+}
+
+/*styles for mobile nav drop down*/
+
+@media only screen and (max-width: 815px) {
+  .tablet_nav {
+    display: none;
+  }
+
+  #nav_mobile {
+    float: right;
+    padding-right: 10px;
+  }
+
+  #mobile_nav_list {
+    height: 250px;
+    margin-top: 0;
+    padding-top: 5px;
+    background-color: rgba(227, 173, 245, 0.9);
+    z-index: 1000;
+    position: absolute;
+    margin-top: 100px;
+    width: 15%;
+    margin-left: 82.5%;
+    padding-left: 0;
+  }
+
+  #mobile_nav_list li {
+    text-align: left;
+    display: block;
+    padding-right: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  #mobile_nav_list li a {
+    padding-right: 0;
+  }
+
+}
+
+/*if using grid - make sure navbar container also shrinks to 80px
+  @max-width 500px*/
+
+@media only screen and (max-width: 500px) {
+
+  #nav_bar {
+    height: 80px;
+  }
+
+  #nav_bar img {
+    margin-top: 10px;
+    height: 60px;
+  }
+
+  #mobile_nav_list {
+    display: none;
+    height: 330px;
+    margin-top: 0;
+    padding-top: 5px;
+    background-color: rgba(227, 173, 245, 0.9);
+    z-index: 1000;
+    position: absolute;
+    margin-top: 80px;
+    width: 25%;
+    margin-left: 71%;
+    padding-left: 0;
+    padding-right: 10px;
+  }
+
+  #mobile_nav_list li {
+    text-align: left;
+    display: block;
+    padding-right: 10px;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-left: 0;
+  }
+
+}
+
+@media only screen and (min-width: 815px) {
+  #nav_mobile {
+    display: none;
+  }
+
+  #mobile_nav_list {
+    display: none;
+  }
+}

@@ -1,0 +1,236 @@
+body{
+  margin: 0;
+  background-color: #fffbfe;
+}
+
+#upper_grid {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto 92px auto;
+  grid-template-areas:
+    "logo"
+    "check"
+    "history";
+}
+
+#vans_logo {
+  grid-area: logo;
+  width: 80%;
+  height: auto;
+  max-height: 295px;
+  max-width: 760px;
+  display: block;
+  margin: 0 auto;
+}
+
+#checkers {
+  grid-area: check;
+  background-size: contain;
+  background-image: url("../images/check_print_trans.svg");
+  background-repeat: repeat-x;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#brand_history {
+  grid-area: history;
+  width: 90%;
+  margin: 2% auto;
+}
+
+#shoe_grid {
+  margin: 0 auto;
+  width: 95%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: auto;
+  grid-gap: 1em;
+  justify-content: center;
+  grid-template-areas:
+    "sk8_hi slip_on";
+}
+
+.shoe_card {
+  background-color: rgba(225, 202, 252, 0.6);
+  border-radius: 12px;
+  box-shadow: 5px 6px 5px 3px rgba(139, 47, 244, 0.83);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "shoe_image"
+    "shoe_name"
+    "shoe_score";
+}
+
+#sk8_hi {
+  grid-area: sk8_hi;
+}
+
+#slip_on {
+  grid-area: slip_on;
+}
+
+.card_img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 2% auto;
+  grid-area: shoe_image;
+}
+
+.shoe_name {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2rem;
+  margin: 2% auto;
+  grid-area: shoe_name;
+}
+
+.star_row {
+  padding-bottom: 4%;
+  grid-area: shoe_score;
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "first second third fourth fifth";
+}
+
+.review_star {
+  height: 1.25rem;
+  width: auto;
+}
+
+@media only screen and (min-width: 640px){
+  .review_star {
+    height: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1180px){
+  .review_star {
+    height: 1.75rem;
+  }
+}
+
+@media only screen and (min-width: 1700px){
+  .review_star {
+    height: 2rem;
+  }
+}
+
+
+
+#first_star {
+  grid-area: first;
+}
+
+#second_star {
+  grid-area: second;
+}
+
+#third_star {
+  grid-area: third;
+}
+
+#fourth_star {
+  grid-area: fourth;
+}
+
+#fifth_star {
+  grid-area: fifth;
+}
+
+
+
+@media screen and (max-width: 340px){
+  #brand_history {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 320px){
+  #brand_history {
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (min-width: 400px){
+
+  #brand_history {
+    padding: 5px;
+  }
+
+  .shoe_name {
+    margin-bottom: 4%;
+  }
+}
+
+@media only screen and (min-width: 500px){
+
+
+  #brand_history {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 512px){
+
+  #shoe_grid {
+    grid-template-columns: 35% 35%;
+    grid-gap: 3em;
+  }
+}
+
+@media only screen and (min-width: 680px){
+
+  #brand_history {
+    font-size: 18px;
+  }
+
+  #shoe_grid {
+    grid-template-columns: 30% 30%;
+    grid-gap: 5em;
+  }
+}
+
+@media only screen and (min-width: 900px){
+
+  #shoe_grid {
+    grid-template-columns: 25% 25%;
+    grid-gap: 8em;
+  }
+
+  .shoe_name {
+    font-size: 24px;
+  }
+
+
+}
+
+@media only screen and (min-width: 1100px){
+  #shoe_grid {
+    grid-template-columns: 20% 20%;
+    grid-gap: 11em;
+  }
+
+  #brand_history{
+    width: 60%;
+  }
+}
+
+
+
+
+
+@media only screen and (min-height: 1024px){
+  #brand_history {
+    font-size: 22px;
+  }
+}

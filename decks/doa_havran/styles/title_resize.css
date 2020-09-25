@@ -1,0 +1,105 @@
+/*since the text for h1 #center text is all written on one line we have to
+scale the font size and line height up as the screen gets larger to maintain the
+formatting per the mock up*/
+@media only screen and (min-width: 378px){
+  #center_text {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+
+  #left_squig, #right_squig {
+    font-size: 8rem;
+  }
+}
+
+@media only screen and (min-width: 488px){
+      #center_text {
+        font-size: 6.5rem;
+      }
+
+      #left_squig, #right_squig {
+        font-size: 8.5rem;
+      }
+}
+
+@media only screen and (min-width: 528px){
+  #center_text {
+    font-size: 7rem;
+    line-height: 5.8rem;
+  }
+}
+
+@media only screen and (min-width: 570px){
+  #center_text {
+    font-size: 7.5rem;
+  }
+
+  #left_squig, #right_squig {
+    font-size: 9rem;
+  }
+
+}
+
+@media only screen and (min-width: 610px){
+  #center_text {
+    font-size: 7.8rem;
+    line-height: 6rem;
+  }
+
+  @media only screen and (min-width: 610px)
+}
+
+@media only screen and (min-width: 634px){
+  #center_text {
+    font-size: 8rem;
+    line-height: 6.5rem;
+  }
+  #left_squig, #right_squig {
+    font-size: 11rem;
+  }
+
+}
+
+@media only screen and (min-width: 650px){
+  #center_text {
+    font-size: 9rem;
+    line-height: 7.5rem;
+  }
+
+  #left_squig, #right_squig {
+    font-size: 12rem;
+  }
+}
+
+@media only screen and (min-width: 736px){
+  #center_text {
+    font-size: 10rem;
+    line-height: 8.5rem;
+  }
+
+  #left_squig, #right_squig {
+    font-size: 14rem;
+  }
+}
+
+@media only screen and (min-width: 813px){
+  #center_text {
+    font-size: 11rem;
+    line-height: 9.5rem;
+  }
+
+  #left_squig, #right_squig {
+    font-size: 14rem;
+  }
+}
+
+@media only screen and (min-width: 896px){
+  #center_text {
+    font-size: 12rem;
+    line-height: 10.5rem;
+  }
+
+  #left_squig, #right_squig {
+    font-size: 18rem;
+  }
+}

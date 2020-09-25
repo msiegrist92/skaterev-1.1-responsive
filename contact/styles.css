@@ -1,0 +1,135 @@
+/*fonts available
+  source sans pro @ 600
+  karla italic, 400, 700
+*/
+
+#nav_bar {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  background-color: #f7c6fb;
+}
+
+form {
+  height: 95vh;
+  width: 85vw;
+  margin: 4vh auto;
+  background-color: #fee0fc;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 12% 10% 7% 10% 7% 10% 20% 24%;
+  /*14% remains for margin use after rows are established*/
+  grid-template-areas:
+    "proposal"
+    "name_title"
+    "name_entry"
+    "email_title"
+    "email_entry"
+    "msg_title"
+    "msg_entry"
+    "send_button";
+}
+
+.proposal {
+  grid-area: proposal;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  width: 90%;
+  margin: 2% auto;
+  text-align: center;
+}
+
+.name_title {
+  grid-area: name_title;
+}
+
+#name_field {
+  grid-area: name_entry;
+}
+
+.email_title {
+  grid-area: email_title;
+}
+
+#email_field {
+  grid-area: email_entry;
+}
+
+.msg_title {
+  grid-area: msg_title;
+}
+
+#message_field {
+  grid-area: msg_entry;
+}
+
+.send_button {
+  grid-area: send_button;
+  width: 65%;
+  height: 50%;
+  margin: auto;
+  background-color: #31748a;
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.send_button:active {
+  background-color: #8c314e;
+}
+
+.field_title {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.input_field {
+  margin-top: 5%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#send_button: hover {
+  background-color: #5808ea;
+}
+
+@media screen and (max-height: 576px){
+  form {
+    height: 120vh;
+  }
+}
+
+@media screen and (max-height: 500px){
+  form {
+    height: 140vh;
+  }
+
+}
+
+@media screen and (max-height: 330px) {
+  form {
+    height: 170vh;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .proposal {
+    font-size: 24px;
+  }
+
+  .field_title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .proposal {
+    font-size: 36px;
+  }
+}

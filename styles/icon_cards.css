@@ -1,0 +1,91 @@
+/*styles for the landing page icon cards*/
+
+#logo_card_container {
+  margin-top: 8%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "decks shoes trucks wheels misc"
+}
+
+#decks {
+  grid-area: decks;
+}
+
+#shoes {
+  grid-area: shoes;
+}
+
+#trucks {
+  grid-area: trucks;
+}
+
+#wheels {
+  grid-area: wheels;
+}
+
+#misc {
+  grid-area: misc;
+}
+
+
+.logo_card {
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgba(220, 198, 226, 0.95);
+  border-radius: 12px;
+  box-shadow: 7px 10px 10px 8px;
+
+}
+
+/*all logo_card svg are 125x125 mm*/
+/*wheel and bearing are 125mm canvas and 100mm shape*/
+
+
+.logo_card img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo_card h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+
+@media only screen and (max-width: 900px){
+  .logo_card h3{
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .logo_card h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  #logo_card_container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "decks decks decks decks shoes shoes shoes shoes trucks trucks trucks trucks"
+      ". . wheels wheels wheels wheels misc misc misc  misc . .";
+  }
+
+  .logo_card {
+    width: 85%;
+  }
+
+  .logo_card h3 {
+    font-size: 1.25rem;
+  }
+}
