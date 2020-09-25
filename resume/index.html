@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <title>Mark Siegrist</title>
+  </head>
+
+  <body>
+    <h1>Mark Siegrist</h1>
+    <h2>Web Developer</h2>
+    <p>770.598.5573 - m.siegrist92@gmail.com</p>
+    <h1>Skills</h1>
+
+    <div id="skills_cont">
+      <img id="js_logo" src="images/js_logo.png">
+      <img id="css_logo" src="images/css_logo.png">
+      <img id="html_logo" src="images/html_logo.png">
+      <img id="nodejs_logo" src="images/nodejs_logo.png">
+    </div>
+
+    <h1>Projects</h1>
+    <div id="proj_cont">
+      <div class='proj' id="proj_1">
+        <h2>SkateRev.com</h2>
+        <!--hover over img to show different page-->
+        <a class='sample' id="switch" href="https://www.skaterev.com">
+          <img id="mob_samp" style="display: block;"src="images/mob_samp.png">
+          <img id="doa_samp" style="display: none;" src="images/doa_tablet.jpg">
+        </a>
+        <a class='git' href="https://github.com/msiegrist92/skaterev-1.1-responsive">
+          <img src="images/github.png">
+        </a>
+        <p>SkateREV is an online review website that also serves as my design playground. Whenever I publish a new review, I take it ground up - from mock-ups, to coding, to responsive design. SkateREV gives me the opportuntiy to experiment with new ideas and combines two of my passions.</p>
+        <button>Skills</button>
+        <ul style='opacity: 0'>
+          <li>CSS Grid</li>
+          <li>Javascript</li>
+          <li>Inkscape</li>
+          <li>Photoshop Elements</li>
+        </ul>
+      </div>
+      <div class='proj' id="proj_2">
+        <h2>Sixth Man NBA Stats</h2>
+        <a class='sample' href="https://quiet-coast-16574.herokuapp.com/">
+          <img src="images/sixthmandemo.gif">
+        </a>
+        <a class='git' href="https://github.com/msiegrist92/nba_app">
+          <img src="images/github.png">
+        </a>
+        <p>SixthMan is a full stack application that lets users graph and compare the stats of NBA players. The site makes requests to the balldontlie.io API and users can customize their own charts. The home page randomly selects a new player every five minutes to compare to NBA greats.</p>
+        <button>Skills</button>
+        <ul style='opacity: 0'>
+          <li>Node.JS</li>
+          <li>Express</li>
+          <li>Chart.JS</li>
+          <li>REST API</li>
+        </ul>
+    </div>
+  </div>
+  <h1>Goals</h1>
+  <p id="summary">I am seeking an entry level position to gain experience and apply my skillset to new problems. I have some college experience but elected to go the self-taught route so I could focus on technologies and projects that interest me. I am currently learning full stack development with MongoDB, Express, Node and React.</p>
+    <script src="script.js"></script>
+  </body>
+</html>
