@@ -23,8 +23,8 @@ body p {
 #skills_cont {
   margin: 2% auto;
   display: grid;
-  width: 80%;
-  grid-template-columns: repeat(4, 1fr);
+  width: 90%;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
 }
 
@@ -116,7 +116,21 @@ button {
   width: 80%;
   margin: 0 auto;
   font-family: "Noto Serif", serif;
-  margin-bottom: 5%;
+  margin-bottom: 7.5%;
+}
+
+#education {
+  width: 40%;
+  display: block;
+  margin: 3% auto;
+}
+
+.clist {
+  font-style: italic;
+}
+
+body:last-child {
+  padding-bottom: 5%;
 }
 
 @media only screen and (max-width: 1200px ){
@@ -135,11 +149,18 @@ button {
 @media only screen and (max-width: 680px){
   #skills_cont {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
     grid-gap: 1.5rem;
   }
+
   #skills_cont img {
     width: 40%;
+  }
+
+
+  #mongodb_logo {
+    grid-column: 1 / 3;
+    width: 30% !important;
   }
 
   #proj_cont {

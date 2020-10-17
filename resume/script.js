@@ -1,21 +1,21 @@
-const sr_img = document.getElementById('switch');
+const to_switch = document.getElementById('switch');
 
-sr_img.addEventListener('mouseover', (e) => {
+to_switch.addEventListener('mouseover', (e) => {
   e.preventDefault();
-  let mob_samp = document.getElementById('mob_samp');
-  let doa_samp = document.getElementById('doa_samp');
+  let to_show = document.getElementById('to_show');
+  let on_hover = document.getElementById('on_hover');
 
-  mob_samp.style.display = 'none';
-  doa_samp.style.display = 'block';
+  to_show.style.display = 'none';
+  on_hover.style.display = 'block';
 })
 
-sr_img.addEventListener('mouseout', (e) => {
+to_switch.addEventListener('mouseout', (e) => {
   e.preventDefault();
-  let mob_samp = document.getElementById('mob_samp');
-  let doa_samp = document.getElementById('doa_samp');
+  let to_show = document.getElementById('to_show');
+  let on_hover = document.getElementById('on_hover');
 
-  mob_samp.style.display = 'block';
-  doa_samp.style.display = 'none';
+  to_show.style.display = 'block';
+  on_hover.style.display = 'none';
 })
 
 buttons = document.querySelectorAll('button');
